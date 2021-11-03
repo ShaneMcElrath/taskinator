@@ -9,23 +9,53 @@
 </head>
 <body>
 
+    <!--Top header-->
     <header>
+
+        <!--Page title-->
         <h1 class="page-title">Taskinator</h1>
         <p>Click the button below to add a new task!</p>
-        <button class="btn" id="save-task">Add task</button>
+
+        <!--Create task form.-->
+        <!--Contains: Input task name, Select task type, Button submit.-->
+        <form id="task-form">
+            <!--Input task name.-->
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter Task Name" />
+            </div>
+            <!--Select task type.-->
+            <div class="form-group">
+                <select name="task-type" class="select-dropdown">
+                    <option value="" disabled selected>Pick a task type</option>
+                    <option value="Print">Print</option>
+                    <option value="Web">Web</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+            </div>
+            <!--Button submit.-->
+            <div class="form-group">
+                <button class="btn" id="save-task" type="submit">Add task</button>
+            </div>
+        </form>
+
     </header>
 
+
+    <!--Middle main-->
     <main class="page-content">
 
-        <sectiont class="task-list-wrapper">
+        <!--Tasks To Do section-->
+        <section class="task-list-wrapper">
             <h2 class="list-title">Tasks To Do</h2>
             <ul class="task-list" id="tasks-to-do">
                 <li class="task-item">A task is going to be added soon!</li>
             </ul>
-        </sectiont>
+        </section>
 
     </main>
 
+
+    <!--Bottom footer-->
     <footer>
         &copy;2020 by Taskinator
     </footer>
